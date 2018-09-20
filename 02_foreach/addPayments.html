@@ -2,12 +2,16 @@
 <html>
 <script src="payments_2005_to_2010.json"></script>
 <script>
+    // index item 9
 
-// -----------------------------
-//    YOUR CODE: write callback 
-// -----------------------------
+var payments = 0;
+function add(item){
+    payments += Number(item[9]);
+};
+
 
 chicago.data.forEach(add);
 
+console.log(payments)
 </script>
 </html>

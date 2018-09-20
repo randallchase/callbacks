@@ -8,11 +8,16 @@ var employees = [
   {name: 'hanna', salary: '250000'}
 ];
 
-// ---------------------------------
-//     YOUR CODE: write callback
-// ---------------------------------
+var salaries = 0;
+var add = function (item) {
+    //console.log(item);
+    salaries += Number(item.salary);
+
+}
 
 employees.forEach(add);
+console.log(salaries);
+
 
 
 </script>
