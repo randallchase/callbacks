@@ -6,18 +6,15 @@
 
 <script type="text/javascript">
 
-// -----------------------------------
-//      YOUR CODE
-//  Write a "point" function that
-//  returns a point object with 
-//  the following format:
-//  
-//  point = {
-//      latitude  : 41.873378;
-//      longitude : -87.668650;
-//  }
-//
-// -----------------------------------
+function point(crime) {
+    var point = {};
+
+    point.latitude = crime[26];
+    point.longitiude = crime[28];
+
+    return point
+}
+
 
 var points = chicago.data.map(point);
 
